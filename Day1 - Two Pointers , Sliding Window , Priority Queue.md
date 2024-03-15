@@ -47,7 +47,6 @@ vector<pair<int,int>> twoSum(vector<int>& nums, int target, int n)
 
 
 **Related Questions :**
-- [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)
 - [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/)
 
 
