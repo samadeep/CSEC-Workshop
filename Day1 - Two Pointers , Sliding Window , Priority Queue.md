@@ -44,7 +44,50 @@ vector<pair<int,int>> twoSum(vector<int>& nums, int target, int n)
         return ans;
 }
 ```
+### Q2 : [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)
+Code :
+```cpp
+class Solution {
+public:
+    int maximumScore(vector<int>& nums, int k) {
 
+        int n = nums.size();
+
+        int l = k , r = k;
+        int score = nums[k] * 1;
+
+        int subarray_min = nums[k];
+
+        //     [left [ ... ]] right
+        
+        // in atleast one direction i can increase the length
+        while( l - 1 >= 0 || r + 1 < n  ){
+            
+            // choose
+            int left_el = l - 1 >= 0 ? nums[l-1] : 0;
+            int right_el = r + 1 < n ? nums[r+1] : 0;
+
+            // array size extend
+            if( left_el > right_el ){
+                subarray_min = min( subarray_min , left_el );
+                l -= 1;
+            }
+
+            if( left_el <= right_el ){
+                subarray_min = min( subarray_min , right_el );
+                r += 1;
+            }
+
+            // update new score
+            score = max( score , subarray_min * ( r - l + 1 ) );
+
+        } 
+
+        return score;
+        
+    }
+};
+```
 
 **Related Questions :**
 - [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/)
@@ -101,9 +144,9 @@ public:
 
 
 **Related Questions :**
-- [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)
 - [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
 
 
 
