@@ -154,18 +154,19 @@ public:
 
 Question : [LC1882. Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/)
 
-Here, we have two min heaps, ordered by [time, weight, index]: available and busy. First, we put all servers into the available heap with time equals to zero.
+### Explanation 
+Here, we possess two minimum heaps, organized by [time, weight, index]: one labeled "free_server" and the other "busy_server." 
+Initially, we populate the available heap with all free_servers, setting their time to zero.
 
-As we process our tasks:
+As we handle our tasks:
 
-Move servers that have finished (time <= t) from busy to avail.
-Pick the top server from the avail heap and move it to the busy heap with time = t + tasks[t].
-This is where we record the index of the server for that task.
-What happens if no servers are available? In this case, the server that is closest to finishing its task will pick up the new task. So:
+- **Transfer servers** that have completed their tasks (time <= t) from the busy heap to the free heap.
+- **Select** the top server from the available heap and move it to the busy heap, setting its time to t + tasks[t]. At this point, we also log the server's index for the respective task.
 
-We move the top server from busy to avail heap.
-Then we move it back to the busy heap, but this time we extend the completion time for the duration of the new task time + task[t].
-In other words, the time is t + task[t] if we have an available server vs. time + task[t].
+- **What occurs if no servers are available?** In such a scenario, the server closest to completing its task will undertake the new task. Hence:
+- We shift the **top server from the busy heap** to the available heap.
+
+- Subsequently, we return it to the busy heap, but this time we prolong the completion time by the duration of the new task (time + task[t]). In essence, the time is set to i + task[i] when an available server is present, as opposed to time + task[i] when one is not.
 
 
 Code : 
