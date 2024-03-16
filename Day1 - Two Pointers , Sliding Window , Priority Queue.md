@@ -5,7 +5,7 @@ https://drive.google.com/file/d/1YTlKpF59MmIPZv8OemIiqTmXQ3R2_xHd/view?usp=drive
 
 ### Two Pointers 
 
-**Link** : https://www.codingninjas.com/studio/problems/two-sum_839653?leftPanelTabValue=SUBMISSION
+**Q1** : [Two Sum - Coding Ninjas](https://www.codingninjas.com/studio/problems/two-sum_839653?leftPanelTabValue=SUBMISSION)
 ```cpp
 vector<pair<int,int>> twoSum(vector<int>& nums, int target, int n)
 {
@@ -44,7 +44,7 @@ vector<pair<int,int>> twoSum(vector<int>& nums, int target, int n)
         return ans;
 }
 ```
-### Q2 : [1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)
+### Q2 : [LC1793. Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray/)
 Code :
 ```cpp
 class Solution {
@@ -90,11 +90,11 @@ public:
 ```
 
 **Related Questions :**
-- [1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/)
+- [LC1147. Longest Chunked Palindrome Decomposition](https://leetcode.com/problems/longest-chunked-palindrome-decomposition/)
 
 
 ### Sliding Window
-[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+[LC209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 ```cpp
 class Solution {
 public:
@@ -144,15 +144,15 @@ public:
 
 
 **Related Questions :**
-- [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
-- [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+- [LC209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+- [LC76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 
 
 
 
 ### Priority Queue - Introduction and Applications in Scheduling
 
-Question : [1882. Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/)
+Question : [LC1882. Process Tasks Using Servers](https://leetcode.com/problems/process-tasks-using-servers/)
 
 Here, we have two min heaps, ordered by [time, weight, index]: available and busy. First, we put all servers into the available heap with time equals to zero.
 
