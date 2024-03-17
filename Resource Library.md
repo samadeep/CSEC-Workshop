@@ -3,7 +3,7 @@
 - [Resources and Problem Links](https://github.com/samadeep/CSEC-Workshop/blob/main/Day1%20-%20Two%20Pointers%20%2C%20Sliding%20Window%20%2C%20Priority%20Queue.md)
 
 
-### Day 2 - Binary Search with Predicate Functions 
+### Day 2 - Binary Search with Predicate Functions and Bit Manipulation
 
 - [Resources and Practice Problem Links along with theory on *Binary Search*](https://github.com/samadeep/CSEC-Workshop/blob/main/Day%202%20-%20Binary%20Search%20and%20Bitmasking.md)
 
