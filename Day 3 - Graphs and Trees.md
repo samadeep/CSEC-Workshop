@@ -2,8 +2,7 @@
 
 ### **Introduction to Graphs and Trees**
 
-Session Notes : 
-
+**Session Notes :**
 - Intro Notes : https://drive.google.com/file/d/15P7H9XcegXFKMW9_yUlOKB0MiDSpaGSg/view?usp=sharing
 - Traversal / DSU Notes :  https://drive.google.com/file/d/13iVboTd0uUv7fCEYeJt9UD4PXfT21Tab/view?usp=sharing
 
