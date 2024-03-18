@@ -155,6 +155,26 @@ public:
         return diameter;
     }
 };
+
+int main() {
+    int n;
+    cout << "Enter the number of nodes in the tree: ";
+    cin >> n;
+
+    Tree tree(n);
+
+    cout << "Enter the edges (node pairs separated by space):" << endl;
+    for (int i = 0; i < n - 1; ++i) {
+        int u, v;
+        cin >> u >> v;
+        tree.addEdge(u, v);
+    }
+
+    int diameter = tree.getDiameter();
+    cout << "Diameter of the tree: " << diameter << endl;
+
+    return 0;
+}
 ```
 
 **Using TIN and TOUT for BFS Traversals** 
