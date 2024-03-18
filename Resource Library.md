@@ -15,3 +15,9 @@
 	 3. https://leetcode.com/problems/split-array-largest-sum/description/
 
 
+  ### Day 3 - Graphs and Trees : Introduction / Traversals / Disjoint Set Union 
+
+  - Link : [Notes and Resources](https://github.com/samadeep/CSEC-Workshop/blob/main/Day%203%20-%20Graphs%20and%20Trees.md)
+
+
+
